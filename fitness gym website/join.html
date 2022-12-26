@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+body{
+    background-image: url(registration.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+}
+
+.reg{
+    /* border: 5px solid red; */
+    border-radius: 20px;
+    margin-top: 40px;
+    width: 170px;
+    margin-left: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-blend-mode:soft-light;
+    background-color:rgb(24, 24, 24);
+    color: white;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.reg h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn{
+    margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(8, 115, 115);
+        background-color:white;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+<body>
+    
+<section class="reg">
+    <h3 class="join">Register</h3>
+    <div class="reg_form">
+        <p class="text">Enter Your Name</p>
+        <input type="text" class="register" placeholder="Enter Name">
+        <p class="text">Enter your Age</p>
+        <input type="text" class="register" placeholder="Enter Age">
+        <p class="text">Gender</p>
+        <span class="gender"><input type="checkbox" class="register"> Male
+            <input type="checkbox" class="register"> Female </span><br><br>
+        <div>
+            <label>
+                Choose Your Plan
+                <select>
+                    <option>Basic Plan</option>
+                    <option>Premium Plan</option>
+                    <option>Yearly Plan</option>
+                </select>
+            </label>
+        </div>
+        <p class="text">Mobile No</p>
+        <input type="number" class="mobile" placeholder="Enter Phone No">
+        <p class="text">Enter Your Email</p>
+        <input type="email" class="email" placeholder="Enter Your Email"><br><br>
+        <button class="btn"><a href="payment.html">Proceed to Payment</a></button>
+    </div>
+</section>
+
+</body>
+</html>

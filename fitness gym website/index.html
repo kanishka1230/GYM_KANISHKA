@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="BODYWORKS">
+           
+        </div>
+
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li id="Home"><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#calculator">Fitness Calculator</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+           <button class="btn" onclick="opencallpop()">Call Us</button>
+           <button class="btn" onclick="openpopup()">Email Us</button>
+
+        </div>
+
+    </header>
+
+    <div class="quote">
+        <h1>
+            Shape Your Dream
+        </h1>
+        <h3>to Get in SHAPE</h3>
+        <div class="apply"><a href="join.html">Join US</a></div>
+    </div>
+
+<!-- email section starts -->
+
+    <div class="email" id="email">
+        <form>
+            <h3>Write to Us</h3><br>
+            Name <br>
+            <input type="text" class="emailname" placeholder="Enter your Name">
+            <br><br>
+            Email <br>
+            <input type="email" class="emailid" placeholder="Enter your Email">
+            <br><br>
+            <input type="text" class="emailcontent" placeholder="write your content here">
+            <br><br>
+            <button class="emailsubmit" onclick="closepopup()">SUBMIT</button><br><br>
+        </form>
+    </div>
+    
+    <script>
+    
+    let popup=document.getElementById("email");
+    
+    function openpopup(){
+        popup.classList.add("PopUp");
+    }
+    
+    function closepopup(){
+        popup.classList.remove("PopUp");
+    }
+        
+    </script>
+
+<!-- email section ends -->
+<!-- call section starts -->
+
+<div class="gymcall" id="gymcall">
+    
+    <form>
+        <h2>Get In Touch With Us</h2><br>
+        First Name
+        <input type="text" class="callname" placeholder="Enter First Name"> 
+        Last Name
+        <input type="text" class="lastname" placeholder="Enter Last Name">
+        <br> <br>
+        Mobile No 
+        <input type="number" class="contactno" placeholder="Enter You Mobile No">
+        <button class="callsubmit" onclick="closecallpop()">SUBMIT</button>
+        <p class="callinstruction">
+            *Our Team will shortly get back to you on your provided Contact Number.
+        </p>
+        <p class="calldetail">For your convenience, we are always available on </p>
+        <span class="callno">&#128222; 9876543210</span>
+    </form>
+</div>
+
+<script>
+
+let pop=document.getElementById("gymcall");
+
+function opencallpop(){
+    pop.classList.add("callpop");
+}
+
+function closecallpop(){
+    pop.classList.remove("callpop");
+}
+
+</script>
+
+<!-- call section ends -->
+                                              <!-- HOME PAGE ENDS -->
+
+<!-- ...........................................price plan starts.................................... -->
+
+<div class="heading">Price Plan</div>
+<section class="price" id="price">
+    </div>
+    <div class="info">
+        <span>Pricing plan</span>
+        <h3>Affordable pricing plan for you</h3>
+        <p>Following are applicable to all plans:</p>
+        <ul>
+            <li>Free gym Tshirt</li>
+            <li>Diet Plan</li>
+            <li>13% off on all store products</li>
+        </ul>
+
+    </div>
+    <div class="basic">
+        <h3>Basic Plan</h3>
+        <div class="cost">
+            <span>$</span> <span class="digit">30</span> <span>/mo</span>
+        </div>
+        <p>&check; 24/7 Gym access</p>
+        <p>&check; Access to lockers & showers</p>
+        <a href="join.html" class="btn">Get Started</a>
+
+    </div>
+    <div class="premium">
+        <h3>premium Plan</h3>
+        <div class="cost">
+            <span>$</span> <span class="digit">45</span> <span>/mo</span>
+        </div>
+        <p>&check; Personal Training</p>
+        <p>&check;Access to lockers & showers</p>
+        <p>&check;</i>24/7 Gym access</p>
+        <!-- <p><i class="check"></i></p> -->
+        <a href="join.html" class="btn">Get Started</a>
+
+    </div>
+    <div class="year">
+        <h3>yearly plan</h3>
+        <div class="cost">
+            <span>$</span> <span class="digit">250</span> <span>/yr</span>
+        </div>
+        <p>&check;Personal Training</p>
+        <p>&check;Access to lockers & showers</p>
+        <p>&check;24/7 Gym access</p>
+        <!-- <p><i class="check"></i></p> -->
+        <a href="join.html" class="btn">Get Started</a>
+        
+    </div>
+</section>
+
+<!-- ......................................price plan ends............................................ -->
+<!-- ..................................gallery section starts........................................... -->
+
+<div class="heading" id="gallery">Gym Gallery</div>
+
+<div class="gallery">
+    <img src="img1.jpg" alt="gym image">
+    <img src="img2.jpg" alt="gym image">
+    <img src="img3.jpg" alt="gym image">
+    <img src="img4.jpg" alt="gym image">
+    <img src="img5.jpg" alt="gym image">
+    <img src="img6.jpg" alt="gym image">
+    <img src="img7.jpg" alt="gym image">
+    <img src="img8.jpg" alt="gym image">
+    <img src="img9.jpg" alt="gym image">
+    <img src="img10.jpg" alt="gym image">
+    <img src="img11.jpg" alt="gym image">
+    <img src="img12.jpg" alt="gym image">
+    <img src="img13.jpg" alt="gym image">
+    <img src="img14.jpg" alt="gym image">
+    <img src="img15.jpg" alt="gym image">
+    <img src="img16.jpg" alt="gym image">
+</div>
+                  
+                            
+<!-- ..............................................gallery section ends............................. -->
+<!-- .............................................bmi section starts................................ -->
+
+<div class="heading" id="calculator">BMI Calculator</div>
+
+<section class="calculator">
+
+    <div class="bmiinfo">
+        <span>Body Mass Index</span>
+        <p id="content">
+            Body mass index (BMI) is a medical screening tool that measures the ratio of your height to your weight to estimate the amount of body fat you have.
+            Diagnosing weight types with BMI. <br>
+            <ul>
+                <li> below 18.5 : <br> Underweight</li> <br>
+                <li> Between 18.5 to 24.9 :<br> Healthy Weight</li> <br>
+                <li> Between 25 to 29.9 :<br> Overweight</li> <br>
+                <li> Above 30 :<br> Obese</li>
+            </ul>
+        </p>
+    </div>
+    
+    <div class="bmi">
+        <h3>BMI Calculator</h3>
+        <p class="input">Height (in cm)</p>
+        <input type="text" id="height" placeholder="Enter Height">
+        <p class="input">weight (in kg)</p>
+        <input type="text" id="weight" placeholder="Enter weight">
+        <p id="result"></p>
+        <button id="btn" onclick="bmi()">Calculate</button>
+    
+    </div>
+    </section>
+    
+    <script>
+        function bmi(){
+            var h= document.getElementById("height").value;
+            var w = document.getElementById("weight").value;
+            var bmi = w/(h/100 * h/100);
+            var total= bmi.toFixed(2);
+            document.getElementById("result").innerHTML= "Your BMI is" + total;
+    
+        }
+    </script>
+
+
+<!-- ........................................bmi section ends....................................... -->
+                                              <!-- TRAINER SECTION STARTS -->
+
+<div class="heading">Expert Trainers</div>
+
+
+<section class="trainer" id="trainer">
+    <div class="box">
+        <div class="trainer1">
+            <img src="trainer1.jpg">
+            <span class="name">Niklaus Mikaelson</span>
+            <!-- <span class="profession">Gym Trainer</span> -->
+        </div>
+        <div class="trainer1">
+            <img src="trainer2.jpg">
+            <span class="name">Catherinre Pierce</span>
+            <!-- <span class="profession">Gym Trainer</span> -->
+        </div>
+        <div class="trainer1">
+            <img src="trainer3.jpg">
+            <span class="name">Marcellus Gilbert</span>
+            <!-- <span class="profession">Gym Trainer</span> -->
+        </div>
+        <div class="trainer1">
+            <img src="trainer4.jpg">
+            <span class="name">Katrina Petrova</span>
+            <!-- <span class="profession">Gym Trainer</span> -->
+        </div>
+    </div>
+</section>
+
+                                     <!-- (trainer section ends) -->
+<!-- .....................................bottom section of page begins................................ -->
+
+<div class="bottom" id="bottom">
+    <span>Important Links</span><br><br>
+    <ul>
+        <li class="link"><a href="#Home">Home</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#price">Price</a></li>
+        <li class="link"><a href="join.html">Join Us</a></li>
+        <li class="link"><a href="#gallery">Gallery</a></li>
+        <li class="link"><a href="#Trainer">Trainers</a></li>
+        <li class="link"><a href="#Calculator">BMI Calculator</a></li>
+    </ul>
+    <div class="link2">
+        &#128231; bodyshop@gmail.com |&#128222; 9876543210
+    </div>
+
+    <div class="copyright">
+        copyright &#169; 2022 Bodyshop.in .All Rights Reserved
+    </div>
+
+<!-- ..........................................body ends........................................... -->
+
+</body>
+</html>

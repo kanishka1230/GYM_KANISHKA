@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+.check{
+    border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 10px 10px 10px rgb(3,25,47);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    visibility: hidden;
+}
+
+.check-pop-up{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+
+.check span{
+    color: brown;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ok:hover{
+background-color: rgb(3,25,47);
+color: red;
+}
+
+</style>
+
+</head>
+<body>
+    
+<div class="check" id="check">
+    <h2>WELCOME!</h2>
+    <span>to Your Fitness Journey</span>
+    <p>You are now an official member of BODYSHOP for the availed time period.</p>
+    <button class="ok" onclick="closecheckpopup()">OK</button>
+</div>
+
+<script>
+
+let checkpop=document.getElementById("check");
+
+function opencheckpopup(){
+    checkpop.classList.add("check-pop-up")
+}
+
+function closecheckpopup(){
+    checkpop.classList.remove("check-pop-up")
+}
+
+</script>
+
+
+</body>
+</html>

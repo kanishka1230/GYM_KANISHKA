@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+body{
+    background-image: url(registration.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 190px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 150px;
+    padding-bottom: 30px;
+    margin-left: 200px;
+    /* margin-right: 600px; */
+    background-color:rgb(24, 24, 24);
+    box-shadow: 20px 20px 20px gray;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.container h3{
+    text-align: center;
+    /* border: 2px solid green; */
+    font-size: 30px;
+    color: white;
+}
+
+.container img{
+    height: 30px;
+    width: 70px;
+    /* border: 2px solid blue; */
+    
+}
+
+.btn{
+    margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 35px;
+}
+        
+
+.btn:hover{
+        color: rgb(8, 115, 115);
+        background-color:white;
+    }
+
+
+    .check{
+    border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 10px 10px 10px rgb(3,25,47);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    visibility: hidden;
+}
+
+.check-pop-up{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+
+.check span{
+    color: brown;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ok:hover{
+background-color: rgb(3,25,47);
+color: red;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h3>PAYMENT</h3><br>
+            <div>
+                <img src="visa.png">
+            </div><br><br>
+            <form>
+                Credit Card Number <br>
+                <input type="text" name="" placeholder="Enter card number"><br><br>
+                 
+                <!-- <input type="text" name="" placeholder="Enter month"> -->
+                <div>
+                    <label>
+                        Valid through Month
+                        <select>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </label>
+                </div><br>
+                <!-- <input type="text" name="" placeholder="Enter year"> -->
+                <div>
+                    <label>
+                        Valid Through Year
+                        <select>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                        </select>
+                    </label>
+                </div><br>
+                CVV <br>
+                <input type="text" name="" placeholder="Enter CVV"><br><br>
+                <button class="btn" type="submit" onclick="opencheckpopup()">Pay Now</button>
+
+            </form>
+        </div>
+    </header>
+
+
+    <div class="check" id="check">
+        <h2>WELCOME!</h2>
+        <span>to Your Fitness Journey</span>
+        <p>You are now an official member of BODYSHOP for the availed time period.</p>
+        <button class="ok" onclick="closecheckpopup()">OK</button>
+    </div>
+    
+    <script>
+    
+    let checkpop=document.getElementById("check");
+    
+    function opencheckpopup(){
+        checkpop.classList.add("check-pop-up");
+    }
+    
+    function closecheckpopup(){
+        checkpop.classList.remove("check-pop-up");
+    }
+    
+    </script>
+
+    
+
+</body>
+</html>
